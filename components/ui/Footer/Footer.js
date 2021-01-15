@@ -33,20 +33,6 @@ export default function Footer() {
                 </a>
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-4">
-              <Link href="/">
-                <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                  Careers
-                </a>
-              </Link>
-            </li>
-            <li className="py-3 md:py-0 md:pb-4">
-              <Link href="/">
-                <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                  Blog
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="col-span-1 lg:col-span-2">
@@ -76,7 +62,7 @@ export default function Footer() {
           <div className="flex space-x-6 items-center h-10">
             <a
               aria-label="Github Repository"
-              href="https://github.com/vercel/nextjs-subscription-payments"
+              href="https://github.com/josefha/jobboardso"
               className={s.link}
             >
               <GitHub />
