@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="rounded-full border border-gray-700 mr-2">
                 <Logo />
               </span>
-              <span>ACME</span>
+              <span>Jobboard.so</span>
             </a>
           </Link>
         </div>
@@ -72,9 +72,12 @@ export default function Footer() {
       </div>
       <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4 bg-primary-2">
         <div>
-          <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+          <div>&copy; | Created with ☕ &nbsp;by <a
+              aria-label="josefkarakca"
+              href="https://twitter.com/josefkarakoca"
+              className={s.link}> @josefkarakca </a> </div>
         </div>
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <span className="text-primary">Crafted by</span>
           <a href="https://vercel.com" aria-label="Vercel.com Link">
             <img
@@ -83,7 +86,7 @@ export default function Footer() {
               className="inline-block h-6 ml-4 text-primary"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

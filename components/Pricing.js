@@ -91,8 +91,8 @@ export default function Pricing({ products }) {
             </button>
           </div>
         </div>
-        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          {products.reverse().map((product) => {
+        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-2xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
+          {products.map((product) => {
             const price = product.prices.find(
               (price) => price.interval === billingInterval
             );
@@ -144,7 +144,7 @@ export default function Pricing({ products }) {
             );
           })}
         </div>
-        <div>
+        {/* <div>
           <p className="mt-24 text-xs uppercase text-accents-3 text-center font-bold tracking-widest">
             Brought to you by
           </p>
@@ -194,8 +194,8 @@ export default function Pricing({ products }) {
                 />
               </a>
             </div>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </section>
   );
