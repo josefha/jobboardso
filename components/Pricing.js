@@ -96,11 +96,12 @@ export default function Pricing({ products }) {
             const price = product.prices.find(
               (price) => price.interval === billingInterval
             );
-            const priceString = new Intl.NumberFormat('en-US', {
+            let priceString = new Intl.NumberFormat('en-US', {
               style: 'currency',
               currency: price.currency,
-              minimumFractionDigits: 0
-            }).format(price.unit_amount / 100);
+              minimumFractionDigits: 0,
+            }).format(price.unit_amount / 100)
+            priceString = priceString.substring(0, priceString.length - 3);;
             return (
               <div
                 key={product.id}
@@ -109,7 +110,7 @@ export default function Pricing({ products }) {
                   {
                     'border border-pink': subscription
                       ? product.name === subscription?.prices?.products.name
-                      : product.name === 'Freelancer'
+                      : product.name === 'Freela'
                   }
                 )}
               >
